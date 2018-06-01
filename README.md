@@ -25,9 +25,11 @@ Python For Finance: Algorithmic Trading [Guía](https://www.datacamp.com/communi
 
 Algorithmic trading in less than 100 lines of Python code [Guía](https://www.oreilly.com/learning/algorithmic-trading-in-less-than-100-lines-of-python-code)
 
+
 ## Extras
 
 Scikit Learn [Cheat Sheet](http://scikit-learn.org/stable/tutorial/machine_learning_map/index.html)
 
-
 Practicas en `R` [Ver repositorio](https://github.com/richimf/R-DataScience)
+
+Papers [Ver carpeta](/Papeles)
