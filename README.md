@@ -1,4 +1,7 @@
-# Machine Learning, 
+# Machine Learning y Reinforcement Learning
+
+Mis puntes :)
+
 
 ## Contenido
 
@@ -8,7 +11,5 @@
 
 * Configurar Environments con Anaconda [Guia](TensorFlow_Environments_Anaconda.md)
 
+* Linear Regresion [Tutorial](Linear_Regresion.md)
 
-
-
-## External Resources
