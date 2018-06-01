@@ -1,11 +1,11 @@
 # Support Vector Machines (SVM) Algorithm
 
-**Support vector machines (SVMs)** son un conjunto de metodos de Supervised Learning usados para **classification**, **regression** y **outliers detection**.
+**Support vector machines (SVMs)** son un conjunto de metodos de **Supervised Learning** usados para **classification**, **regression** y **outliers detection**.
 
 
 ## ¿En que consiste?
 
-**SVM** como un algoritmo de **clasificación**:
+ **SVM** como un método de **clasificación**:
 
 Tenemos datos de diferentes clases, y queremos ver como separarlos por una línea. Entonces buscamos aquella línea que maximice la distancia a los puntos mas cercanos, esta distancia la llamaremos el **Margin** o margen.
 
@@ -26,6 +26,7 @@ Tenemos datos de diferentes clases, y queremos ver como separarlos por una líne
 - Si el número de *Features* es mucho mas grande que el número de muestras, el método puede darte un performance pobre.
 
 - SVM no te dan estimaciones de probabilidad.
+
 
 ## Ejemplos
 
@@ -61,6 +62,10 @@ Kernel Trick consiste en que a partir de datos no separables pasemos aun plano d
 
 ![](kernel-trick.png)
 
+Hay **tres tipos** diferentes de **SVM-Kernels**. El polynomial y el RBF son especificamente útilies cuando los data-points no son linealmente separables. [Ver más](http://scikit-learn.org/stable/auto_examples/svm/plot_svm_kernels.html#sphx-glr-auto-examples-svm-plot-svm-kernels-py)
+
+![](svm-kernels.png)
+
 
 ## Tipos de SVM
 
@@ -87,8 +92,8 @@ El método de Support Vector Classification puede resolver problemas de regresio
 Veamos un código de ejemplo de un **SVM** para clasificación, utilizaremos el **SVC**.
 
 ``` Python
-from sklearn.svm import SVC
-clf = SVC(kernel="linear")
+from sklearn.svm import SVC # SVM para clasificacion: SVC
+clf = SVC(kernel="linear") # Crea el classifier, especificamos un kernel lineal (existen mas, como poly, rbf, sigmoid, etc...
 clf.fit(features_train, labels_train)
 pred = clf.predict(features_test)
 
@@ -99,6 +104,14 @@ from sklearn.metrics import accuracy_score
 acc = accuracy_score(pred, labels_test)
 print "accuracy: ", acc
 ```
+
+## Parameters in ML
+
+Para un SVM tenemos diferentes parametros, el **Kernel**, **C** y **Gamma**. En la sig. imágen podemos ver un kernel lineal y un rbf.
+
+![](parametersML.png)
+
+## TODO: COMPLETAR ESTA SECCION
 
 
 
