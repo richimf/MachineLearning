@@ -52,6 +52,8 @@ Bien, ahora teniendo el sig. conjunto de datos, ¿Como los podriamos separar lin
 
 La respuesta es **|x|**, con el **valor absoluto de x** los valores que estan a la izquierda del eje **y** pasan al otro lado, y ahora si podemos separarlos por una línea, así:
 
+![](absXclassification.png)
+
 
 ## Kernel Trick
 
